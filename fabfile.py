@@ -38,4 +38,13 @@ def setup_hadoop():
    sudo('chown -R hduser:hadoop /home/hduser/*')
    with settings(sudo_user="hduser"):
       sudo('ln -s hadoop-1.2.1 hadoop')
-   #append("/users/hduser/.bashrc", 'export HADOOP_PREFIX=/home/hduser/hadoop', user='hduser')  
+   #append("/users/hduser/.bashrc", 'export HADOOP_PREFIX=/home/hduser/hadoop', user='hduser') 
+
+def setup_siteconf():
+   put('')
+
+def format_hdfs():
+
+def start_all():
+
+
