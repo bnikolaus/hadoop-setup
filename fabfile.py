@@ -44,6 +44,7 @@ def setup_siteconf():
    put('')
 
 def format_hdfs():
+   sudo('hdfs -c "/usr/bin/hadoop namenode -format"')
 
 def start_all():
 
