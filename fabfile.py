@@ -27,6 +27,9 @@ def disable_ipv6():
    puts('Verify IP6 is disabled') 
    sudo('cat /proc/sys/net/ipv6/conf/all/disable_ipv6')
 
+def download():
+   
+
 def setup_hadoop():
    sudo('rm -rf /home/hduser/hadoop-1.2.1/hadoop-1.2.1') 
    sudo('yum install wget') 
