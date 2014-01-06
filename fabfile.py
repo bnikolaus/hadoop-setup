@@ -32,7 +32,9 @@ def setup_hadoop():
    sudo('yum install wget') 
    # sudo('wget -P /users/hduser/ http://mirror.nexcess.net/apache/hadoop/common/hadoop-1.2.1/hadoop-1.2.1.tar.gz', user='hduser')
    local('./dist/download.sh')
-   put('./dist/hadoop-1.2.1.tar.gz', '/home/hduser/') 
+   # testing out v2
+   put('./dist/hadoop-2.2.0.tar.gz', '/home/hduser/')
+   # put('./dist/hadoop-1.2.1.tar.gz', '/home/hduser/') 
    sudo('chown hduser:hadoop /home/hduser/hadoop-1.2.1.tar.gz')
    sudo('tar -xvf /home/hduser/hadoop-1.2.1.tar.gz')
    sudo('mv -f hadoop-1.2.1 /home/hduser/hadoop-1.2.1')
